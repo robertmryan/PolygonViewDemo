@@ -12,7 +12,35 @@
 		83FAEB341E2DEF300012C3F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FAEB321E2DEF300012C3F8 /* Main.storyboard */; };
 		83FAEB361E2DEF300012C3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FAEB351E2DEF300012C3F8 /* Assets.xcassets */; };
 		83FAEB391E2DEF300012C3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FAEB371E2DEF300012C3F8 /* LaunchScreen.storyboard */; };
+		83FAEB491E2DEF450012C3F8 /* PolygonViewDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FAEB471E2DEF450012C3F8 /* PolygonViewDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83FAEB4C1E2DEF450012C3F8 /* PolygonViewDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FAEB451E2DEF450012C3F8 /* PolygonViewDemoKit.framework */; };
+		83FAEB4D1E2DEF450012C3F8 /* PolygonViewDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83FAEB451E2DEF450012C3F8 /* PolygonViewDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83FAEB531E2DEF510012C3F8 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FAEB521E2DEF510012C3F8 /* PolygonView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83FAEB4A1E2DEF450012C3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83FAEB231E2DEF300012C3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83FAEB441E2DEF450012C3F8;
+			remoteInfo = PolygonViewDemoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83FAEB511E2DEF450012C3F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83FAEB4D1E2DEF450012C3F8 /* PolygonViewDemoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83FAEB2B1E2DEF300012C3F8 /* PolygonViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolygonViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,23 @@
 		83FAEB351E2DEF300012C3F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FAEB381E2DEF300012C3F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83FAEB3A1E2DEF300012C3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FAEB451E2DEF450012C3F8 /* PolygonViewDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PolygonViewDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FAEB471E2DEF450012C3F8 /* PolygonViewDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonViewDemoKit.h; sourceTree = "<group>"; };
+		83FAEB481E2DEF450012C3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FAEB521E2DEF510012C3F8 /* PolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
+		83FAEB541E2DF4EC0012C3F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83FAEB281E2DEF300012C3F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FAEB4C1E2DEF450012C3F8 /* PolygonViewDemoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83FAEB411E2DEF450012C3F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +79,9 @@
 		83FAEB221E2DEF300012C3F8 = {
 			isa = PBXGroup;
 			children = (
+				83FAEB541E2DF4EC0012C3F8 /* README.md */,
 				83FAEB2D1E2DEF300012C3F8 /* PolygonViewDemo */,
+				83FAEB461E2DEF450012C3F8 /* PolygonViewDemoKit */,
 				83FAEB2C1E2DEF300012C3F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				83FAEB2B1E2DEF300012C3F8 /* PolygonViewDemo.app */,
+				83FAEB451E2DEF450012C3F8 /* PolygonViewDemoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +108,28 @@
 			path = PolygonViewDemo;
 			sourceTree = "<group>";
 		};
+		83FAEB461E2DEF450012C3F8 /* PolygonViewDemoKit */ = {
+			isa = PBXGroup;
+			children = (
+				83FAEB471E2DEF450012C3F8 /* PolygonViewDemoKit.h */,
+				83FAEB521E2DEF510012C3F8 /* PolygonView.swift */,
+				83FAEB481E2DEF450012C3F8 /* Info.plist */,
+			);
+			path = PolygonViewDemoKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83FAEB421E2DEF450012C3F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FAEB491E2DEF450012C3F8 /* PolygonViewDemoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		83FAEB2A1E2DEF300012C3F8 /* PolygonViewDemo */ = {
@@ -74,15 +139,35 @@
 				83FAEB271E2DEF300012C3F8 /* Sources */,
 				83FAEB281E2DEF300012C3F8 /* Frameworks */,
 				83FAEB291E2DEF300012C3F8 /* Resources */,
+				83FAEB511E2DEF450012C3F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83FAEB4B1E2DEF450012C3F8 /* PBXTargetDependency */,
 			);
 			name = PolygonViewDemo;
 			productName = PolygonViewDemo;
 			productReference = 83FAEB2B1E2DEF300012C3F8 /* PolygonViewDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		83FAEB441E2DEF450012C3F8 /* PolygonViewDemoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FAEB4E1E2DEF450012C3F8 /* Build configuration list for PBXNativeTarget "PolygonViewDemoKit" */;
+			buildPhases = (
+				83FAEB401E2DEF450012C3F8 /* Sources */,
+				83FAEB411E2DEF450012C3F8 /* Frameworks */,
+				83FAEB421E2DEF450012C3F8 /* Headers */,
+				83FAEB431E2DEF450012C3F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolygonViewDemoKit;
+			productName = PolygonViewDemoKit;
+			productReference = 83FAEB451E2DEF450012C3F8 /* PolygonViewDemoKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +182,12 @@
 					83FAEB2A1E2DEF300012C3F8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UZAPXQTVQ4;
+						ProvisioningStyle = Automatic;
+					};
+					83FAEB441E2DEF450012C3F8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UZAPXQTVQ4;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				83FAEB2A1E2DEF300012C3F8 /* PolygonViewDemo */,
+				83FAEB441E2DEF450012C3F8 /* PolygonViewDemoKit */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83FAEB431E2DEF450012C3F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +241,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83FAEB401E2DEF450012C3F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FAEB531E2DEF510012C3F8 /* PolygonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83FAEB4B1E2DEF450012C3F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83FAEB441E2DEF450012C3F8 /* PolygonViewDemoKit */;
+			targetProxy = 83FAEB4A1E2DEF450012C3F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83FAEB321E2DEF300012C3F8 /* Main.storyboard */ = {
@@ -260,6 +375,7 @@
 		83FAEB3E1E2DEF300012C3F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				INFOPLIST_FILE = PolygonViewDemo/Info.plist;
@@ -273,6 +389,7 @@
 		83FAEB3F1E2DEF300012C3F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
 				INFOPLIST_FILE = PolygonViewDemo/Info.plist;
@@ -280,6 +397,53 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.PolygonViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		83FAEB4F1E2DEF450012C3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PolygonViewDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.PolygonViewDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83FAEB501E2DEF450012C3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PolygonViewDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.PolygonViewDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -300,6 +464,14 @@
 			buildConfigurations = (
 				83FAEB3E1E2DEF300012C3F8 /* Debug */,
 				83FAEB3F1E2DEF300012C3F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83FAEB4E1E2DEF450012C3F8 /* Build configuration list for PBXNativeTarget "PolygonViewDemoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FAEB4F1E2DEF450012C3F8 /* Debug */,
+				83FAEB501E2DEF450012C3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
