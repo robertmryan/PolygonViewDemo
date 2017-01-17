@@ -1,4 +1,4 @@
-## Swift-base IBDesignable Polygon View using CAShapeLayer
+## Swift Polygon View using CAShapeLayer
 
 This is an demonstration of using `CAShapeLayer`/`UIBezierPath` to create a view that contains a polygon in Swift.
 
